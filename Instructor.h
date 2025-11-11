@@ -18,6 +18,7 @@ public:
     string getDepartment();
     int getExperienceYears();
     Instructor(string name,int id,string department, int experienceYears);
+    ~Instructor();
 
 };
 
