@@ -1,20 +1,26 @@
 #ifndef STUDENT_H
 #define STUDENT_H
 
+#include<iostream>
 #include "Person.h"
-#include <string>
-#using namespace std;
-//#write student class here
+using namespace std;
+#include<string>
+
+class Student:public Person{
+private:
+    int yearLevel;
+    string major;
+public:
+    Student();
+    Student(string name,string major,int id,int yearLevel);
+    int getYearLevel();
+    string getMajor();
+    void display();
+    ~Student();
 
 
 
-
-
-
-
-
-
-
+};
 
 
 
